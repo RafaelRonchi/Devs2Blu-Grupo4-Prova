@@ -1,0 +1,56 @@
+li{
+    font-size: 18px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.container{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.returnButton{
+    background-color: rgb(37, 37, 37);
+    border-radius: 30px;
+    padding: 10px;
+}
+.returnButton p{
+    color: var(--color-txt);
+}
+.card{
+    display: grid;
+    width: 400px;
+    height: fit-content;
+    background-color: rgb(59, 59, 59);
+    padding-right: 20px;
+    margin: 10px;
+    border-radius: 5%;
+    outline: 10px;
+    outline-color: rgb(255, 197, 90);
+    outline-offset: 5px;
+    outline-style:groove;
+}
+.card img{
+    width: inherit;
+    margin: 10px;
+    border-radius: 25%;
+}
+.card h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+.card h2{
+    font-size: 20px;
+    margin: 10px;
+}
+.card li{
+    font-size: 18px;
+    margin: 10px;
+}
+.ingredients ul{
+    list-style: disc;
+}
+.instructions ul{
+    list-style: decimal;
+}
