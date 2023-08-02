@@ -4,6 +4,12 @@
 :root {
   --color-bg: #1f1f1f;
   --color-txt: #f9f6f3;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-red: #e12124;
+  --color-header: #2b2a33;
+  --color-bg: #1f1f1f;
+  --color-txt: #f9f6f3;
 }
 
 body {

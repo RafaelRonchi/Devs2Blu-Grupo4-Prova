@@ -2,6 +2,14 @@
     font-family: 'Montserrat', sans-serif;
 
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
 #mensagem {
     resize: none; 
     height: 60px; 
@@ -18,11 +26,16 @@ main{
     background-color: #e1d0c100;
     display: flex;
     margin: 0;
+    width: 100%;
+    flex-grow: 1;
 }
 article{
     margin: 20px;
     width: 100%;
-    position: relative;
+    
+    
+    bottom: 0;
+    
 }
 
 .article-title{
@@ -36,6 +49,10 @@ article{
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+section {
+    display: flex;
+}
+  
 
 label {
     display: block;
@@ -131,7 +148,21 @@ p {
     width: 100%;
     border-radius: 3px;
     
+    
 }
+
+footer{
+    width: 100%;
+    background-color: var(--color-header);
+    position: absolute;
+    bottom: 0;
+    
+}
+.footer-des{
+    font-size: 12px;
+}
+
+
 
 
 
