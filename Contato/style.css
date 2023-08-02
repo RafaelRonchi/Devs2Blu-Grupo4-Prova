@@ -156,10 +156,12 @@ footer{
     background-color: var(--color-header);
     position: absolute;
     bottom: 0;
-    
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
 }
 .footer-des{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 
