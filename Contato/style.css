@@ -51,6 +51,7 @@ article{
 }
 section {
     display: flex;
+    height: 100vh;
 }
   
 
@@ -154,7 +155,7 @@ p {
 footer{
     width: 100%;
     background-color: var(--color-header);
-    position: absolute;
+    
     bottom: 0;
     align-items: center;
     display: inline-flex;
