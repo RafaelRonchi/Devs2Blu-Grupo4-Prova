@@ -1,35 +1,40 @@
-li{
+li {
     font-size: 18px;
     margin: 10px;
     margin-bottom: 20px;
 }
-.container{
+
+.container {
     margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.returnButton{
+
+.returnButton {
     background-color: rgb(37, 37, 37);
     border-radius: 30px;
     padding: 10px;
 }
-.returnButton p{
+
+.returnButton p {
     color: var(--color-txt);
 }
-.section{
+
+.section {
     display: grid;
-    height:auto;
+    height: auto;
     width: auto;
     background-color: rgb(73, 73, 73);
     padding: 10px;
     margin: 10px;
     border-radius: 8%;
 }
-.card{
+
+.card {
     justify-content: center;
     justify-items: center;
-    width:auto;
+    width: auto;
     height: fit-content;
     background-color: rgb(59, 59, 59);
     padding: 10px;
@@ -37,26 +42,32 @@ li{
     border-radius: 5%;
     outline: 10px;
     outline-color: rgb(255, 197, 90);
-    outline-style:groove;
+    outline-style: groove;
 }
-.card img{
+
+.card img {
     justify-self: center;
     width: 50%;
     border-radius: 25%;
 }
-.card h1{
+
+.card h1 {
     text-align: center;
     font-size: 40px;
 }
-.card h2{
+
+.card h2 {
     font-size: 20px;
 }
-.card li{
+
+.card li {
     font-size: 18px;
 }
-.ingredients ul{
+
+.ingredients ul {
     list-style: disc;
 }
-.instructions ul{
+
+.instructions ul {
     list-style: decimal;
 }

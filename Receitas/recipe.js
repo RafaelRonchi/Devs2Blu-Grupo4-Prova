@@ -1,5 +1,5 @@
 var button = document.getElementsByClassName("returnButton")
 
-function returnToMainPage(){
+function returnToMainPage() {
     window.location = ""; //<--------inserir o link da pagina de receitas aqui
 }
