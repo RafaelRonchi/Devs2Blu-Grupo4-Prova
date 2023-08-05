@@ -5,7 +5,7 @@ li {
 }
 
 .container {
-    margin: 10px;
+    margin: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ li {
     height: auto;
     width: auto;
     background-color: rgb(73, 73, 73);
-    padding: 10px;
+    padding: 25px;
     margin: 10px;
     border-radius: 8%;
 }
