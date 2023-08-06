@@ -10,11 +10,11 @@
 .section-title{
     
     text-align: center;
-    font-size: 50px;
-    font-weight: bold;
+
     align-items: center;
     
-    
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 .sec1{
     display: flex;
@@ -41,7 +41,8 @@ article{
 .article-title{
     text-align: center;
     align-items: center;
-    font-size: 35px;}
+    font-size: 1.5rem;
+}
 
 .contact-form {
     background-color: #f8f8f859;
@@ -80,7 +81,7 @@ textarea {
     resize: none;
 }
 
-input[type="submit"] {
+.btnenviar {
     background-color: #FF8C00;
     color: #fff;
     cursor: pointer;
@@ -88,11 +89,11 @@ input[type="submit"] {
     border-radius: 4px;
     padding: 10px 20px;
     font-size: 16px;
-    width: 99.5%;
+    width: 97.5%;
     transition: all 0.5s;
 }
 
-input[type="submit"]:hover {
+.btnenviar:hover {
     background-color: #5a463c;
 }
 .btn-return{
@@ -137,6 +138,10 @@ input[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
+.article2 .article-title{
+    margin-top: 24px;
+}
+
 
 .contatos p {
     text-align: center;
@@ -149,9 +154,45 @@ input[type="submit"]:hover {
 .mapa{
     width: 100%;
     border-radius: 3px;
-    min-height: 350px ;
+    height: 320px ;
     
 }
+.btn-green{
+    background-color: rgb(3, 214, 3);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 97.5%;
+    transition: all 0.5s;
+}
+
+
+  
+.success-message {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.712);
+    border-radius: 50px;
+    opacity: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    transition: opacity 0.5s, transform 0.5s;
+}
+.success-message.show {
+    display: block;
+    opacity: 1; 
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
 @media only screen and (max-width: 1100px) {
     .section-title{
         margin-top: 40px;
