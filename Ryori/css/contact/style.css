@@ -30,12 +30,19 @@
     width: 100%;
     flex-grow: 1;
     align-items: center;
+    
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 article{
+   
+    width: 40%;   
+    
+    flex: 1;
     margin: 20px;
-    width: 100%;   
-    bottom: 0;
+    
+    max-width: 750px; 
 }
 
 .article-title{
@@ -199,6 +206,37 @@ textarea {
     }
   }
 
+@media only screen and (max-width: 1866px) {
+    
+    article{
+    max-width: 700px; 
+    }
+}
+@media only screen and (max-width: 1671px) {
+    
+    article{
+    max-width: 600px; 
+    }
+}
+
+@media only screen and (max-width: 1487px) {
+    
+    article{
+    max-width: 500px; 
+    }
+}
+@media only screen and (max-width: 1261px) {
+    
+    article{
+    max-width: 400px; 
+    }
+}
+@media only screen and (max-width: 1079px) {
+    
+    article{
+    max-width: 300px; 
+    }
+}
 @media only screen and (max-width: 1024px) {
     .btn-return {
       position: relative;
@@ -231,6 +269,9 @@ textarea {
 @media only screen and (max-width: 548px) {
     .section-title{
         margin-top: 40px;
+    }
+    article{
+        max-width: 290px; 
     }
   }
   
