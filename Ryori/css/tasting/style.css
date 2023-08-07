@@ -39,7 +39,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  background: #53504f;
+  background: var(--color-bg);
   gap: 1.5rem;
 }
 
@@ -60,6 +60,7 @@ body {
 
 .home-text h1 {
   font-size: var(--big-font);
+  font-weight: bold;
 }
 
 .home-text span {
@@ -96,6 +97,10 @@ body {
 
 .heading h2 {
   font-size: var(--h2-font);
+}
+
+.menu-services {
+  background: #53504f;
 }
 
 .services-container {
@@ -183,6 +188,67 @@ body {
   background-color: #969595;
 }
 
+hr {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-bottom: 50px;
+  position: relative;
+  top: 400px;
+}
+
+/* Estilos dos cards */
+.dishes-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 300px;
+  margin-top: 500px;
+  background-color: rgb(189, 189, 189)
+}
+
+/* Estilos para os cartões de pratos */
+.dish-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.dish-item {
+  display: flex;
+  margin-bottom: 120px;
+  margin-left: 120px;
+}
+
+.dish-item img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 10%;
+  padding: 1cm;
+}
+
+.dish-item p {
+  flex: 0.7;
+  margin-top: 100px;
+  color: #000;
+  margin-left: 200px;
+  font-size: 25px;
+}
+
+.dish-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 991px) {
   section {
     padding: 50px 4%;
@@ -207,54 +273,4 @@ body {
   .home-text {
     padding-top: 2rem;
   }
-}
-
-/* Estilos dos cards */
-
-.dishes-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 220px;
-  margin-top: 500px;
-  background-color: (var(--color-bg));
-}
-
-.dish-card {
-  display: flex;
-  height: 1000px;
-  width: 750px;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 1rem;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
-  margin-bottom: 20px;
-  margin-left: 29%;
-}
-
-.dish-card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.dish-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.dish-card p {
-  margin-bottom: 8px;
-}
-
-.dish-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
