@@ -22,10 +22,6 @@ section,
   display: flex;
 }
 
-section {
-  margin-top: 10rem;
-}
-
 .ideogram {
   width: 2rem;
   margin: 0 auto 0.5rem auto;
@@ -46,7 +42,7 @@ section {
 /* Section: Highlight */
 .highlight {
   flex-direction: column;
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 /* Highlight: Carousel */
@@ -57,7 +53,7 @@ section {
 
 .carousel-inner {
   border-radius: 5px;
-  box-shadow: 0 5px 20px var(--color-black);
+  box-shadow: 0 0 100px var(--color-black);
 }
 
 .carousel-inner h5,
@@ -75,7 +71,7 @@ section {
 .guide {
   flex-direction: column;
   align-items: center;
-  margin: 12rem auto -2rem auto;
+  margin: 10rem auto -2rem auto;
 }
 
 .special {
@@ -115,11 +111,14 @@ section {
 /* Section: Newsletter */
 .news {
   flex-direction: column;
-  margin-top: 15rem;
+  width: 50%;
+  padding: 2rem;
+  border: 1px solid  var(--color-txt);
+  border-radius: 5px;
+  margin: 10rem auto 0 auto;
 }
 
 .news form {
-  width: 50%;
   justify-content: center;
   align-items: center;
   gap: 3rem;
@@ -191,7 +190,7 @@ section {
 }
 
 .about {
-  margin: 12rem auto 5rem auto;
+  margin: 7rem auto 5rem auto;
 }
 
 .about div {
@@ -215,7 +214,7 @@ section {
 .about article img {
   width: 12rem;
   border-radius: 5px;
-  box-shadow: 0 5px 20px var(--color-black);
+  box-shadow: 0 0 50px var(--color-black);
 }
 
 .about article p {
@@ -228,6 +227,11 @@ section {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
   /* Section: Highlight */
+  .highlight .section-title,
+  .highlight .section-subtitle {
+    z-index: 1;
+  }
+
   /* Highlight: Carousel */
   .carousel-indicators button {
     visibility: hidden;
@@ -243,6 +247,10 @@ section {
   }
 
   /* Section: Newsletter */
+  .news {
+    width: 90%;
+  }
+
   .news form button {
     width: 10rem;
   }
@@ -267,10 +275,6 @@ section {
 (max-height: 768px) {
 
   /* Shared */
-  section {
-    margin-top: 5rem;
-  }
-
   .guide, 
   .news {
     margin: 5rem auto -2rem auto;
@@ -288,7 +292,7 @@ section {
 
   .carousel-inner {
     border-radius: 0;
-    box-shadow: 0 5px 20px var(--color-black);
+    box-shadow: none;
   }
 
   .carousel-indicators button,
@@ -307,8 +311,13 @@ section {
   }
 
   /* Section: Newsletter */
+  .news {
+    width: 95%;
+    margin-top: 7rem;
+  }
+
   .news .section-subtitle {
-    margin: 0  0.5rem 1.5rem 0.5rem;
+    margin: 0 auto 1.5rem auto;
   }
 
   .news form {
@@ -322,7 +331,7 @@ section {
 
   /* Section: About */
   .about {
-    margin: 5rem auto 2rem auto;
+    margin: 7rem auto 2rem auto;
   }
 
   .about .section-subtitle {
@@ -341,6 +350,6 @@ section {
   .about article img {
     width: 8rem;
     border-radius: 5px;
-    box-shadow: 0 5px 20px var(--color-black);
+    box-shadow: 0 0 50px var(--color-black);
   }
 }

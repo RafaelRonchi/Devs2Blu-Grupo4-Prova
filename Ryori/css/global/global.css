@@ -84,7 +84,7 @@ body::after {
   justify-content: space-between;
   padding: 0.5rem;
   background-color: var(--color-header);
-  box-shadow: 0 5px 20px var(--color-black);
+  box-shadow: 0 -250px 100px var(--color-black);
   z-index: 4;
 }
 
@@ -127,7 +127,7 @@ body::after {
   justify-content: space-between;
   padding: 0.25rem;
   background-color: var(--color-header);
-  box-shadow: 0 -5px 20px var(--color-black);
+  box-shadow: 0 250px 100px var(--color-black);
 }
 
 .footer p {
@@ -245,7 +245,7 @@ body::after {
     width: 100%;
     height: 9rem;
     background-color: var(--color-header);
-    box-shadow: 0 5px 20px var(--color-black);
+    box-shadow: 0 -250px 100px var(--color-black);
     z-index: 3;
     transition: top 0.25s ease;
   }
