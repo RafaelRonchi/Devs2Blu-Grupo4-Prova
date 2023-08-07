@@ -163,6 +163,7 @@ section {
 
 .recipe-card img {
     width: 100%;
+    
     object-fit: contain;
     height: 100%;
     border-radius: 5px 5px 0 0;
