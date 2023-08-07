@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="formreceitas" class="formreceitas">
+
+    <div class="nomereceita">
+       <label for="nomereceita"> Nome da Receita : </label> <input id="nomereceita" type="text">
+    
+    
+        <label for="tiporeceita"> tipo da Receita : </label> <select  id="tiporeceita" name="" id="">
+            <option value="sobremesa">Sobremesa</option>
+            <option value="pratopeincipal">prato principal</option>
+            <option value="acompanhamento">acompanhamento</option>
+            <option value="aperitivosalgado">aperitivo salgado</option>
+            <option value="aperitivodoce">aperitivo doce</option>
+        </select>
+        <label for="temporeceita"> tempo da Receita : </label> <input id="temporeceita" type="text">
+     
+    
+    </div>
+    <div id="ingregientesreceita" class="ingredientes">
+        <label for="ing1">ingredientes: 01 :</label> <input id="ing1" type="text"><img id="addingre" src="star1.png.webp" alt="">
+
+    </div>
+    <div id="preparoreceita" class="preparo">
+      <label for="prep1">preparo : 01 :</label>   <input id="prep1" type="text"><img id="addprepa" src="star1.png.webp" alt="">
+
+    </div>
+    <div id="dicasreceita" class="dicas">
+
+        <label for="dica1">Dica de preparo : 01 :</label> <input id="dica1" type="text"> <img id="adddica" src="star1.png.webp" alt="">
+    </div>
+    <input type="button" value="enviar Receita" id="btnEnviarreceita">
+
+
+
+    </div>
+
+    <div id="divcards"></div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+
+    <script src="../../js/recipes/firebase.js" type="module"></script>
+
+
+    <script src="../../js/recipes/addreceitas.js" type="module"></script>
+</body>
+</html>
