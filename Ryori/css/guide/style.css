@@ -44,18 +44,24 @@ body {
 
 .home-img {
     display: flex;
-    margin-left: 60%;
+    margin-left: 48%;
     position: relative;
-    bottom: 450px;
+    bottom: 600px;
+}
 
-    height: 500px;
-    width: 500px;
+
+.home-img img {
+    width: 100%;
+    max-width: 1020px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(201, 199, 199, 0.2);
 }
 
 .home-text {
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 100px;
     padding-top: 100px;
     margin-left: 100px;
 }
@@ -70,12 +76,14 @@ body {
     border-radius: 2rem;
     background: #000000;
     margin-left: 100px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(201, 199, 199, 0.2);
 }
 
 .home-text h1 {
     font-size: var(--big-font);
     font-weight: bold;
-    margin-left: 120px;
+    margin-left: 100px;
 }
 
 .home-text p {
@@ -83,6 +91,7 @@ body {
     max-width: 80%;
     margin: 1rem 0 2.1rem;
     margin-left: 100px;
+    padding-top: 100px;
 }
 
 .btn {
@@ -103,17 +112,29 @@ body {
 }
 
 .heading p {
+    font-size: 20px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: bold;
     color: var(--main-color);
 }
 
 .heading h2 {
     font-size: var(--h2-font);
+    padding-top: 55px;
+    font-weight: 600;
 }
 
 .menu-services {
-    background: #53504f;
+    background: #555252;
+}
+
+.menu-services p {
+    padding-top: 20px;
+}
+
+.menu-services h2 {
+    padding-top: 25px;
+    font-weight: bold;
 }
 
 .services-container {
@@ -144,8 +165,9 @@ body {
 .food-trail .trail-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 150px;
     margin-top: 1.5rem;
+    margin-top: 150px;
 }
 
 .food-trail .trail-container .trail-box {
@@ -159,6 +181,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .food-trail .trail-container .trail-box .text {
@@ -203,10 +226,20 @@ body {
 
 hr {
     width: 100%;
-    background-color: #ffffff;
-    padding-bottom: 15px;
+    border: none;
+    background-color: #b81e1e;
+    padding-bottom: 25px;
     position: relative;
-    top: 400px;
+    top: 500px;
+}
+
+#hr-services {
+    width: 100%;
+    border: none;
+    background-color: #b81e1e;
+    padding-bottom: 25px;
+    position: relative;
+    top: 20px;
 }
 
 /* Estilos dos cards */
@@ -241,20 +274,36 @@ hr {
     margin-left: 120px;
 }
 
+.dish-card h3 {
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    width: 450px;
+    position: relative;
+    top: 70px;
+    left: 52%;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
 .dish-item img {
-    width: 40%;
-    height: 25rem;
+    width: 500px;
+    /* Tamanho fixo para as imagens */
+    height: 500px;
+    /* Tamanho fixo para as imagens */
     object-fit: cover;
+    margin-right: 10px;
     border-radius: 10%;
-    padding: auto;
-    margin-top: 60px;
+    margin-top: -10px;
+    padding: 1cm;
 }
 
 .dish-item p {
-    margin-top: 100px;
+    margin-top: 170px;
     color: #000;
-    margin-left: 100px;
-    font-size: 20px;
+    margin-left: 80px;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 .dish-card:hover {
