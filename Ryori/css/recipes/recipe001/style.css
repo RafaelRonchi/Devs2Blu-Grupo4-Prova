@@ -1,3 +1,76 @@
 /* Meta */
 @import url('../../../css/global/global.css');
 
+li {
+    font-size: 18px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.returnButton {
+    background-color: rgb(37, 37, 37);
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.returnButton p {
+    color: var(--color-txt);
+}
+
+.section {
+    display: grid;
+    height: auto;
+    width: auto;
+    background-color: rgb(73, 73, 73);
+    padding: 25px;
+    margin: 10px;
+    border-radius: 8%;
+}
+
+.card {
+    justify-content: center;
+    justify-items: center;
+    width: auto;
+    height: fit-content;
+    background-color: rgb(59, 59, 59);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
+    outline: 10px;
+    outline-color: rgb(255, 197, 90);
+    outline-style: groove;
+}
+
+.card img {
+    justify-self: center;
+    width: 50%;
+    border-radius: 25%;
+}
+
+.card h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.card h2 {
+    font-size: 20px;
+}
+
+.card li {
+    font-size: 18px;
+}
+
+.ingredients ul {
+    list-style: disc;
+}
+
+.instructions ul {
+    list-style: decimal;
+}
