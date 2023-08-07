@@ -13,7 +13,6 @@ main {
 
 a {
     text-decoration: none;
-    color: var(--color-txt);
 }
 
 section {
@@ -46,14 +45,6 @@ section {
     text-align: center;
 }
 
-.linkAdd {
-    color: var(--color-red);
-}
-
-.linkAdd:after {
-    color: var(--color-dred);
-}
-
 .recipes-content {
     display: flex;
     flex-direction: column;
@@ -75,9 +66,13 @@ section {
     margin-bottom: 1rem;
     background-color: var(--color-red);
     border-radius: 10px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
     position: sticky;
     top: 6.5rem;
     z-index: 1;
+    background-image: url('../../img/recipes/receitas/texture02.png');
+    background-repeat: repeat;
+    background-size: 30%;
 }
 
 .filter-content {
@@ -97,27 +92,28 @@ section {
     justify-content: center;
     width: 10rem;
     height: 2rem;
-    background-color: var(--color-white);
+    background-color: rgba(225,33,36, .6);
+    border: 2px solid var(--color-white);
+    color: var(--color-txt);
     border-radius: 10px;
     cursor: pointer;
     box-sizing: border-box;
-    border: none;
     outline: none;
     transition: background-color 0.2s;
+    font-weight: 600;
 }
 
 .filter-btn:hover {
-    background-color: #d5d5d5;
+    background-color: rgba(140, 21, 23, .6);
 }
 
 .active {
-    background-color: var(--color-red);
-    border: 2px solid var(--color-white);
-    color: var(--color-txt);
+    background-color: var(--color-white);
+    color: var(--color-red);
 }
 
 .active:hover {
-    background-color: var(--color-dred);
+    background-color: #d5d5d5;
 }
 
 /* Recipes */
@@ -127,7 +123,7 @@ section {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
     justify-items: center;
-    overflow: hidden;
+    overflow: visible;
     padding: 10px 15px;
     width: 100%;
 }
@@ -137,7 +133,7 @@ section {
     max-width: 100%;
     margin-top: 1em;
     border-radius: 5px;
-    box-shadow: 1em 2em 2.5em rgba(68, 1, 1, 0.08);
+    box-shadow: 0em 0em 2em rgba(0, 0, 0, .3);
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     display: none;
@@ -204,6 +200,7 @@ section {
 
     .filter {
         top: 4.5rem;
+        background-size: 60%;
     }
 
     .filter ul {

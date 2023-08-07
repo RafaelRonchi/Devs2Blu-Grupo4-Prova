@@ -29,49 +29,53 @@
 
     <section class="recipes">
       <div class="info">
-          <h2 class="title">RECEITAS</h2>
-          <p class="section-subtitle">Deseja adicionar sua receita? <a class="linkAdd" href="../recipes/salvarReceita.html">Clique aqui!</a></p>
+        <h2 class="title">RECEITAS</h2>
       </div>
 
       <div class="recipes-content">
+        
+        <div class="filter">
+          <ul class="filter-content" id="filter-content">
+            <li>
+              <button class="filter-btn active" onclick="filterCards('all')"><span
+                  class="btn-text">Todas</span></button>
+            </li>
+            <li>
+              <button class="filter-btn" onclick="filterCards('entrada')"><span class="btn-text">Entrada</span></button>
+            </li>
+            <li>
+              <button class="filter-btn" onclick="filterCards('acompanhamento')">
+                <div class="btn-text">Acompanhamento</div>
+              </button>
+            </li>
+            <li>
+              <button class="filter-btn" onclick="filterCards('principal')"><span
+                  class="btn-text">Principal</span></button>
+            </li>
+            <li>
+              <button class="filter-btn" onclick="filterCards('sobremesa')"><span
+                  class="btn-text">Sobremesa</span></button>
+            </li>
+          </ul>
+        </div>
 
-          <div class="filter">
-              <ul class="filter-content" id="filter-content">
-                <li>
-                  <button class="filter-btn active" onclick="filterCards('all')"><span class="btn-text">Todas</span></button>
-                </li>
-                <li>
-                  <button class="filter-btn" onclick="filterCards('entrada')"><span class="btn-text">Entrada</span></button>
-                </li>
-                <li>
-                  <button class="filter-btn" onclick="filterCards('acompanhamento')"><div class="btn-text">Acompanhamento</div></button>
-                </li>
-                <li>
-                  <button class="filter-btn" onclick="filterCards('principal')"><span class="btn-text">Principal</span></button>
-                </li>
-                <li>
-                  <button class="filter-btn" onclick="filterCards('sobremesa')"><span class="btn-text">Sobremesa</span></button>
-                </li>
-              </ul>
-          </div>
+        <div class="cards">
 
-          <div  class="cards">
-
-            <div class="recipe-card acompanhamento">
-              <a href="#">
-                  <img src="../../img/recipes/receitas/sushi.jpg" alt="img" class="recipe-img">
-                  <h4 class="recipe-name">Nome da receita</h4>
-                  <div class="recipe-info">
-                      <p class="recipe-duration">99min</p>
-                      <p class="recipe-type">Acompanhamento</p>
-                  </div>
-              </a>
+          <div class="recipe-card acompanhamento">
+            <a href="#">
+              <img src="../../img/recipes/receitas/sushi.jpg" alt="img" class="recipe-img">
+              <h4 class="recipe-name">Nome da receita</h4>
+              <div class="recipe-info">
+                <p class="recipe-duration">99min</p>
+                <p class="recipe-type">Acompanhamento</p>
+              </div>
+            </a>
           </div>
-          </div>
+        </div>
 
       </div>
 
-  </section>
+    </section>
 
   </main>
   <footer class="footer module" id="footer">
