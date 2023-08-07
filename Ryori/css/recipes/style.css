@@ -92,6 +92,7 @@ section {
     justify-content: center;
     width: 10rem;
     height: 2rem;
+    font-family: 'Montserrat', sans-serif;
     background-color: rgba(225,33,36, .6);
     border: 2px solid var(--color-white);
     color: var(--color-txt);
