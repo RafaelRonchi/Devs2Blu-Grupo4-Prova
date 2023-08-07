@@ -120,7 +120,7 @@ section {
 }
 
 .active:hover {
-    background-color: #d5d5d5;
+    background-color: var(--color-white);
 }
 
 /* Recipes */
