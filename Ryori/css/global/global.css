@@ -7,6 +7,7 @@
   --color-black: #000;
   --color-red: #e12124;
   --color-dred: #8c1517;
+  --color-green: #24e13a;
   --color-header: #2b2a33;
   --color-bg: #1f1f1f;
   --color-txt: #f9f6f3;
@@ -113,6 +114,11 @@ body::after {
 
 .header-navbar ul li a:hover {
   background-color: var(--color-red);
+}
+
+.header-navbar ul li a:active {
+  background-color: var(--color-dred);
+  transition: none;
 }
 
 /* Footer */
