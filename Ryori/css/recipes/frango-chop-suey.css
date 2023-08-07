@@ -1,0 +1,87 @@
+/* Meta */
+@import url('../global/global.css');
+
+main {
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    width: 80%;
+
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    font-weight: 300;
+}
+
+.image {
+    width: 100%;
+    margin: 2rem auto 5rem auto;
+}
+
+.image img {
+    width: 100%;
+    height: 25rem;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 5px 20px var(--color-black);
+    margin-bottom: .5rem;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.description {
+    margin-bottom: 5rem;
+    width: 90%;
+    text-align: justify;
+    hyphens: auto;
+    margin: 0 auto;
+}
+
+.ingredients p, 
+.preparation p,
+.tips p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.ingredients ul,
+.tips ul {
+    list-style:disc;
+    padding: 2rem;
+}
+
+.preparation ol {
+    list-style: upper-roman;
+    padding: 2rem;
+}
+
+.return {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.return a {
+    border: 1px solid var(--color-red);
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: var(--color-red);
+    text-decoration: none;
+
+}

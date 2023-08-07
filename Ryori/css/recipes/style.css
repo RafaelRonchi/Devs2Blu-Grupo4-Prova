@@ -86,6 +86,7 @@ section {
 }
 
 .filter-btn {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
