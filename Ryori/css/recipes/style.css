@@ -46,6 +46,14 @@ section {
     text-align: center;
 }
 
+.linkAdd {
+    color: var(--color-red);
+}
+
+.linkAdd:after {
+    color: var(--color-dred);
+}
+
 .recipes-content {
     display: flex;
     flex-direction: column;
