@@ -1,0 +1,107 @@
+/* Meta */
+@import url('../global/global.css');
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+
+section {
+	width: 80%;
+}
+
+.recipe {
+	margin: 7rem 0 5rem 0;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.info {
+	font-weight: 300;
+	text-align: center;
+}
+
+.image {
+	width: 100%;
+	margin: 2rem auto 5rem auto;
+}
+
+.image img {
+	width: 100%;
+	height: 25rem;
+	object-fit: cover;
+	border-radius: 5px;
+	margin-bottom: 0.5rem;
+	box-shadow: 0 0 100px var(--color-black);
+}
+
+.subtitle {
+	text-align: center;
+	font-weight: 300;
+}
+
+.description {
+	width: 90%;
+	text-align: justify;
+	hyphens: auto;
+	margin: 0 auto;
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.ingredients ul,
+.tips ul {
+	list-style: disc;
+	padding: 1.5rem;
+}
+
+.preparation li,
+.tips li {
+	line-height: 2;
+}
+
+.preparation ol {
+	list-style: upper-roman;
+	padding: 1.5rem;
+}
+
+.return {
+	align-self: flex-end;
+	text-decoration: none;
+	font-weight: 500;
+	color: var(--color-red);
+	padding: 0.5rem;
+	border: 1px solid var(--color-red);
+	border-radius: 5px;
+	margin-right: 2rem;
+}
+
+/* Media query for smartphones */
+@media only screen and (max-width: 768px),
+(max-height: 768px) {
+
+	section {
+		width: 100%;
+	}
+
+	.image img {
+		height: 15rem;
+		border-radius: 0;
+	}
+
+	.ingredients,
+	.preparation,
+	.tips {
+		margin-left: 1.5rem;
+	}
+}
