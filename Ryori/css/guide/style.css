@@ -28,6 +28,7 @@ section {
 }
 
 body {
+    overflow-x: hidden;
     color: var(--color-txt);
     background: var(--color-bg);
 }
@@ -55,6 +56,8 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(201, 199, 199, 0.2);
+    transform: translateX(150px);
+    
 }
 
 .home-text {
