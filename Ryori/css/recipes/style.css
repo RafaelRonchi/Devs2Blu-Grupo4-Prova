@@ -71,11 +71,9 @@ section {
     margin-bottom: 1rem;
     background-color: var(--color-red);
     border-radius: 10px;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
-    position: sticky;
-    top: 6.5rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
     z-index: 1;
-    background-image: url('../../img/recipes/receitas/texture02.png');
+    background-image: url('../../img/recipes/texture02.png');
     background-repeat: repeat;
     background-size: 30%;
 }
@@ -98,7 +96,6 @@ section {
     justify-content: center;
     width: 10rem;
     height: 2rem;
-    font-family: 'Montserrat', sans-serif;
     background-color: rgba(225,33,36, .6);
     border: 2px solid var(--color-white);
     color: var(--color-txt);

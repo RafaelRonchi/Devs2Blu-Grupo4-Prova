@@ -2,40 +2,37 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Material -->
+	<!-- Native -->
+	<link rel="stylesheet" href="../../css/recipes/style.css">
+	<script defer src="../../js/global/modules.js"></script>
+	<script defer src="../../js/recipes/main.js"></script>
 
-  <!-- Native -->
-  <link rel="stylesheet" href="../../css/recipes/style.css">
-  <script defer src="../../js/global/modules.js"></script>
-  <script defer src="../../js/recipes/main.js"></script>
-
-  <link rel="shortcut icon" href="../../src/favicon.ico" type="image/x-icon">
-  <title>Ryōri Receitas</title>
+	<link rel="shortcut icon" href="../../src/favicon.ico" type="image/x-icon">
+	<title>Ryōri - Receitas</title>
 </head>
 
 <body>
-  <!-- Header -->
-  <header id="header" class="header module">
-    <!-- Content loaded by ../../js/global/modules.js -->
-  </header>
-  <nav id="hamburger" class="sphone-navbar module">
-    <!-- Content loaded by ../../js/global/modules.js -->
-  </nav>
-  <!-- Main -->
-  <main>
+	<!-- Header -->
+	<header id="header" class="header module">
+		<!-- Content loaded by ../../js/global/modules.js -->
+	</header>
+	<nav id="hamburger" class="sphone-navbar module">
+		<!-- Content loaded by ../../js/global/modules.js -->
+	</nav>
+	<!-- Main -->
+	<main>
+		<section class="recipes">
+			<div class="info">
+				<img class="ideogram" src="../../img/global/ideogram-ryori.png" alt="">
+				<h2 class="title">RECEITAS</h2>
+			</div>
 
-    <section class="recipes">
-      <div class="info">
-        <img class="ideogram" src="../../img/global/ideogram-ryori.png" alt="">
-        <h2 class="title">RECEITAS</h2>
-      </div>
+			<div class="recipes-content">
 
-      <div class="recipes-content">
-
-        <div class="filter">
+				<div class="filter">
           <ul class="filter-content" id="filter-content">
             <li>
               <button class="filter-btn active" onclick="filterCards('all')"><span
@@ -63,7 +60,7 @@
         <div class="cards">
 
 
-          <div class="recipe-card acompanhamento">
+          <!-- <div class="recipe-card acompanhamento">
             <a href="#">
               <img src="../../img/recipes/receitas/sushi.jpg" alt="img" class="recipe-img">
               <h4 class="recipe-name">Nome da receita</h4>
@@ -72,11 +69,11 @@
                 <p class="recipe-type">Acompanhamento</p>
               </div>
             </a>
-          </div>
+          </div> -->
 
           <div class="recipe-card sobremesa">
             <a href="../recipes/bingsu-matcha.html">
-              <img src="../../img/recipes/receitas/9e068316f1de5288135c3ac463e3e840refc.jpg" alt="img"
+              <img src="../../img/recipes/recipe/bingsu.jpg" alt="img"
                 class="recipe-img">
               <h4 class="recipe-name">Bingsu de Matcha</h4>
               <div class="recipe-info">
@@ -88,7 +85,7 @@
 
           <div class="recipe-card entrada">
             <a href="../recipes/manduguk.html">
-              <img src="../../img/recipes/receitas/Duk-Mandu-Guk-Korean-Rice-Cake-and-Dumpling-Soup-1-of-3-1024x682.jpg"
+              <img src="../../img/recipes/recipe/mandu.jpg"
                 alt="img" class="recipe-img">
               <h4 class="recipe-name">Mandu Guk</h4>
               <div class="recipe-info">
@@ -100,7 +97,7 @@
 
           <div class="recipe-card principal">
             <a href="../recipes/bulgoi.html">
-              <img src="../../img/recipes/receitas/R.jfif" alt="img" class="recipe-img">
+              <img src="../../img/recipes/recipe/bulgogi.jfif" alt="img" class="recipe-img">
               <h4 class="recipe-name">Bulgogi</h4>
               <div class="recipe-info">
                 <p class="recipe-duration">70min</p>
@@ -111,7 +108,7 @@
 
           <div class="recipe-card principal">
             <a href="../recipes/frango-chop-suey.html">
-              <img src="../../img/recipes/receitas/frango-chop-suey.jpg" alt="img" class="recipe-img">
+              <img src="../../img/recipes/recipe/frango-chop-suey.jpg" alt="img" class="recipe-img">
               <h4 class="recipe-name">Frango Chop Suey</h4>
               <div class="recipe-info">
                 <p class="recipe-duration">140min</p>
@@ -122,7 +119,7 @@
 
           <div class="recipe-card acompanhamento">
             <a href="../recipes/bolo-de-lua-chines.html">
-              <img src="../../img/recipes/receitas/cut-mooncake-and-mooncake-molds.webp" alt="img" class="recipe-img">
+              <img src="../../img/recipes/recipe/cut-mooncake-and-mooncake-molds.webp" alt="img" class="recipe-img">
               <h4 class="recipe-name">Bolo de Lua Chinês</h4>
               <div class="recipe-info">
                 <p class="recipe-duration">1h 45min</p>
@@ -133,7 +130,7 @@
 
           <div class="recipe-card acompanhamento">
             <a href="../recipes/rolinhos-primavera-crocantes-chineses.html">
-              <img src="../../img/recipes/receitas/rolinhoprimavera.webp" alt="img" class="recipe-img">
+              <img src="../../img/recipes/recipe/rolinhoprimavera.webp" alt="img" class="recipe-img">
               <h4 class="recipe-name">Rolinhos Primavera Crocantes Chineses</h4>
               <div class="recipe-info">
                 <p class="recipe-duration">1h 10min</p>
@@ -150,9 +147,10 @@
     </section>
 
   </main>
-  <footer class="footer module" id="footer">
-    <!-- Content loaded by ../../js/global/modules.js -->
-  </footer>
+  <!-- Footer -->
+	<footer class="footer module" id="footer">
+		<!-- Content loaded by ../../js/global/modules.js -->
+	</footer>
   <script type="module" src="../../js/recipes/receitas.js"></script>
 </body>
 
