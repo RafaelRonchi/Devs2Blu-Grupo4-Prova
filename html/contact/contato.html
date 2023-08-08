@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../css/contact/style.css">
+  <script defer src="../../js/global/modules.js"></script>
+  <script defer src="../../js/contact/main.js"></script>
+
+  <link rel="shortcut icon" href="../../src/favicon.ico" type="image/x-icon">
+  <title>Ryōri - Contato</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="header module">
+    <!-- Content loaded by ../../js/global/modules.js -->
+  </header>
+  <nav id="hamburger" class="sphone-navbar module">
+    <!-- Content loaded by ../../js/global/modules.js -->
+  </nav>
+  <!-- Main -->
+  <div class="success-message">Mensagem enviada! Obrigado pelo apoio.</div>
+  <main>
+    <section class="sec1">
+      <h1 class="section-title">CONTATO</h1>
+
+    </section>
+    <section class="sec2">
+            <article>
+                <h2 class="article-title">Preencha o formulário para entrar em contato!</h2>
+
+                <form action="#" method="post" class="contact-form">
+                    <label for="nome"> <img src="../../img/contact/perfil-de-usuario.png" alt="">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br>
+                    
+                    <label for="email"> <img src="../../img/contact/o-email.png" alt="">E-mail:</label>
+                    <input type="email" id="email" name="email" required><br>
+        
+                    <label  for="assunto"> <img src="../../img/contact/sujeito.png" alt="">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="" disabled selected>Selecione um assunto</option>
+                        <option value="suporte">Suporte</option>
+                        <option value="sugestoes">Sugestões</option>
+                        <option value="parcerias">Parcerias</option>
+                        <option value="certificados">Certificados</option>
+                        <option value="outros">Outros</option>
+                    </select><br>
+                    
+                    <label for="mensagem"> <img src="../../img/contact/contrato.png" alt="">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem"  required></textarea><br>
+                    
+                    <input type="submit" value="Enviar" class="btnenviar">
+                </form>
+            </article>
+            
+            
+            <article class="article2">
+                <h2  class="article-title ">Informações de Contato:</h2>
+                <div class="contatos">
+                    <p><img src="../../img/contact/o-email.png" alt=""><b>E-mail:</b> contato@exemplo.com</p>
+                    <p><img src="../../img/contact/telefone.png" alt=""><b>Telefone:</b> (XX) XXXXX-XXXX</p>
+                    <p><img src="../../img/contact/marcador-de-posicao-do-mapa.png" alt=""><b>Localização:</b></p>
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14167.341833250102!2d-48.729253887590296!3d-27.41206232160946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527534aff5b41e3%3A0x5e1fd60a09dd612b!2sSaudades%20-%20Bigua%C3%A7u%2C%20SC%2C%2088160-000!5e0!3m2!1spt-BR!2sbr!4v1691003817267!5m2!1spt-BR!2sbr" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+            
+            
+    </section>
+          <button class="btn-return" style="z-index: 3;" onclick="history.back()">Voltar</button>
+  </main>
+      
+        
+        <footer id="footer" class="footer module">
+          <!-- Content loaded by ../../js/global/modules.js -->
+        </footer>
+ 
+</body>
+
+</html>
