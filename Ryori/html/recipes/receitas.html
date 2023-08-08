@@ -2,136 +2,140 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Material -->
+	<!-- Native -->
+	<link rel="stylesheet" href="../../css/recipes/style.css">
+	<script defer src="../../js/global/modules.js"></script>
+	<script defer src="../../js/recipes/main.js"></script>
 
-  <!-- Native -->
-  <link rel="stylesheet" href="../../css/recipes/style.css">
-  <script defer src="../../js/global/modules.js"></script>
-  <script defer src="../../js/recipes/main.js"></script>
-
-  <link rel="shortcut icon" href="../../src/favicon.ico" type="image/x-icon">
-  <title>Ryōri Receitas</title>
+	<link rel="shortcut icon" href="../../src/favicon.ico" type="image/x-icon">
+	<title>Ryōri - Receitas</title>
 </head>
 
 <body>
-  <!-- Header -->
-  <header id="header" class="header module">
-    <!-- Content loaded by ../../js/global/modules.js -->
-  </header>
-  <nav id="hamburger" class="sphone-navbar module">
-    <!-- Content loaded by ../../js/global/modules.js -->
-  </nav>
-  <!-- Main -->
-  <main>
+	<!-- Header -->
+	<header id="header" class="header module">
+		<!-- Content loaded by ../../js/global/modules.js -->
+	</header>
+	<nav id="hamburger" class="sphone-navbar module">
+		<!-- Content loaded by ../../js/global/modules.js -->
+	</nav>
+	<!-- Main -->
+	<main>
+		<section class="recipes">
+			<div class="info">
+				<img class="ideogram" src="../../img/global/ideogram-ryori.png" alt="">
+				<h2 class="title">RECEITAS</h2>
+			</div>
 
-    <section class="recipes">
-      <div class="info">
-        <img class="ideogram" src="../../img/global/ideogram-ryori.png" alt="">
-        <h2 class="title">RECEITAS</h2>
-      </div>
+			<div class="recipes-content">
 
-      <div class="recipes-content">
+				<div class="filter">
+					<ul class="filter-content" id="filter-content">
+						<li>
+							<button class="filter-btn active" onclick="filterCards('all')"><span class="btn-text">Todas</span></button>
+						</li>
+						<li>
+							<button class="filter-btn" onclick="filterCards('entrada')"><span class="btn-text">Entrada</span></button>
+						</li>
+						<li>
+							<button class="filter-btn" onclick="filterCards('acompanhamento')">
+								<div class="btn-text">Acompanhamento</div>
+							</button>
+						</li>
+						<li>
+							<button class="filter-btn" onclick="filterCards('principal')"><span class="btn-text">Principal</span></button>
+						</li>
+						<li>
+							<button class="filter-btn" onclick="filterCards('sobremesa')"><span class="btn-text">Sobremesa</span></button>
+						</li>
+					</ul>
+				</div>
+				<div class="cards">
+					<div class="recipe-card entrada">
+						<a href="edamame-grelhado.html">
+							<img class="recipe-img" src="../../img/recipes/recipe/edamame.png" alt="">
+							<h4 class="recipe-name">Edamame Grelhado</h4>
+							<div class="recipe-info">
+								<p class="recipe-duration">~10min</p>
+								<p class="recipe-type">Entrada</p>
+							</div>
+						</a>
+					</div>
+					<div class="recipe-card principal">
+						<a href="teppanyaki-frutos-do-mar.html">
+							<img class="recipe-img" src="../../img/recipes/recipe/teppanyaki.png" alt="">
+							<h4 class="recipe-name">Teppanyaki Frutos do Mar</h4>
+							<div class="recipe-info">
+								<p class="recipe-duration">~70min</p>
+								<p class="recipe-type">Principal</p>
+							</div>
+						</a>
+					</div>
+					<div class="recipe-card sobremesa">
+						<a href="mochi-matcha.html">
+							<img class="recipe-img" src="../../img/recipes/recipe/mochi.png" alt="">
+							<h4 class="recipe-name">Mochi de Matcha</h4>
+							<div class="recipe-info">
+								<p class="recipe-duration">~480min</p>
+								<p class="recipe-type">Sobremesa</p>
+							</div>
+						</a>
+					</div>
+					<div class="recipe-card entrada">
+						<a href="mandu-guk.html">
+							<img class="recipe-img"
+								src="../../img/recipes/recipe/mandu.jpg"
+								alt="">
+							<h4 class="recipe-name">Mandu Guk</h4>
+							<div class="recipe-info">
+								<p class="recipe-duration">~180min</p>
+								<p class="recipe-type">Entrada</p>
+							</div>
+						</a>
+					</div>
+					<div class="recipe-card principal">
+						<a href="bulgogi.html">
+							<img class="recipe-img" src="../../img/recipes/recipe/bulgogi.jfif" alt="">
+							<h4 class="recipe-name">Bulgogi</h4>
+							<div class="recipe-info">
+								<p class="recipe-duration">~70min</p>
+								<p class="recipe-type">Principal</p>
+							</div>
+						</a>
+					</div>
+					<div class="recipe-card sobremesa">
+						<a href="bingsu-matcha.html">
+							<img class="recipe-img" src="../../img/recipes/recipe/bingsu.jpg" alt="">
+							<h4 class="recipe-name">Bingsu de Matcha</h4>
+							<div class="recipe-info">
+								<p class="recipe-duration">~50min</p>
+								<p class="recipe-type">Sobremesa</p>
+							</div>
+						</a>
+					</div>
+					<div class="recipe-card principal">
+						<a href="../recipes/frango-chop-suey.html">
+							<img class="recipe-img" src="../../img/recipes/recipe/frango-chop-suey.jpg" alt="">
+							<h4 class="recipe-name">Frango Chop Suey</h4>
+							<div class="recipe-info">
+								<p class="recipe-duration">~140min</p>
+								<p class="recipe-type">Principal</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+	</main>
 
-        <div class="filter">
-          <ul class="filter-content" id="filter-content">
-            <li>
-              <button class="filter-btn active" onclick="filterCards('all')"><span
-                  class="btn-text">Todas</span></button>
-            </li>
-            <li>
-              <button class="filter-btn" onclick="filterCards('entrada')"><span class="btn-text">Entrada</span></button>
-            </li>
-            <li>
-              <button class="filter-btn" onclick="filterCards('acompanhamento')">
-                <div class="btn-text">Acompanhamento</div>
-              </button>
-            </li>
-            <li>
-              <button class="filter-btn" onclick="filterCards('principal')"><span
-                  class="btn-text">Principal</span></button>
-            </li>
-            <li>
-              <button class="filter-btn" onclick="filterCards('sobremesa')"><span
-                  class="btn-text">Sobremesa</span></button>
-            </li>
-          </ul>
-        </div>
-
-        <div class="cards">
-
-
-          <div class="recipe-card acompanhamento">
-            <a href="#">
-              <img src="../../img/recipes/receitas/sushi.jpg" alt="img" class="recipe-img">
-              <h4 class="recipe-name">Nome da receita</h4>
-              <div class="recipe-info">
-                <p class="recipe-duration">99min</p>
-                <p class="recipe-type">Acompanhamento</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="recipe-card sobremesa">
-            <a href="bingsumatcha.html">
-              <img src="../../img/recipes/receitas/9e068316f1de5288135c3ac463e3e840refc.jpg" alt="img"
-                class="recipe-img">
-              <h4 class="recipe-name">Bingsu de Matcha</h4>
-              <div class="recipe-info">
-                <p class="recipe-duration">50min</p>
-                <p class="recipe-type">Sobremesa</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="recipe-card entrada">
-            <a href="manduguk.html">
-              <img src="../../img/recipes/receitas/Duk-Mandu-Guk-Korean-Rice-Cake-and-Dumpling-Soup-1-of-3-1024x682.jpg"
-                alt="img" class="recipe-img">
-              <h4 class="recipe-name">Mandu Guk</h4>
-              <div class="recipe-info">
-                <p class="recipe-duration">180min</p>
-                <p class="recipe-type">Entrada</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="recipe-card principal">
-            <a href="bulgoi.html">
-              <img src="../../img/recipes/receitas/R.jfif" alt="img" class="recipe-img">
-              <h4 class="recipe-name">Bulgogi</h4>
-              <div class="recipe-info">
-                <p class="recipe-duration">70min</p>
-                <p class="recipe-type">Principal</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="recipe-card principal">
-            <a href="../recipes/frango-chop-suey.html">
-              <img src="../../img/recipes/receitas/frango-chop-suey.jpg" alt="img" class="recipe-img">
-              <h4 class="recipe-name">Frango Chop Suey</h4>
-              <div class="recipe-info">
-                <p class="recipe-duration">140min</p>
-                <p class="recipe-type">Principal</p>
-              </div>
-            </a>
-          </div>
-
-        </div>
-      </div>
-
-      </div>
-
-    </section>
-
-  </main>
-  <footer class="footer module" id="footer">
-    <!-- Content loaded by ../../js/global/modules.js -->
-  </footer>
-  <script type="module" src="../../js/recipes/receitas.js"></script>
+	<!-- Footer -->
+	<footer class="footer module" id="footer">
+		<!-- Content loaded by ../../js/global/modules.js -->
+	</footer>
 </body>
 
 </html>

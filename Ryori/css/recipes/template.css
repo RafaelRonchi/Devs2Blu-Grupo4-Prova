@@ -65,6 +65,11 @@ h3 {
 	padding: 1.5rem;
 }
 
+.preparation li,
+.tips li {
+	line-height: 2;
+}
+
 .preparation ol {
 	list-style: upper-roman;
 	padding: 1.5rem;
@@ -79,4 +84,24 @@ h3 {
 	border: 1px solid var(--color-red);
 	border-radius: 5px;
 	margin-right: 2rem;
+}
+
+/* Media query for smartphones */
+@media only screen and (max-width: 768px),
+(max-height: 768px) {
+
+	section {
+		width: 100%;
+	}
+
+	.image img {
+		height: 15rem;
+		border-radius: 0;
+	}
+
+	.ingredients,
+	.preparation,
+	.tips {
+		margin-left: 1.5rem;
+	}
 }
